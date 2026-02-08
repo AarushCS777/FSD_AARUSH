@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Simple Interest App</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #eef2f3;
+        }
+
+        .box{
+            width: 350px;
+            background: white;
+            padding: 20px;
+            margin: 80px auto;
+            border: 1px solid #ccc;
+        }
+
+        h2{
+            color: blue;
+            text-align: center;
+        }
+
+        input{
+            width: 100%;
+            padding: 6px;
+            margin-top: 8px;
+        }
+
+        button{
+            margin-top: 12px;
+            padding: 8px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .result{
+            margin-top: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Simple Interest</h2>
+
+    <input type="number" id="p" placeholder="Principle Amount">
+    <input type="number" id="t" placeholder="Time (Months)">
+    <input type="number" id="r" placeholder="Rate (%)">
+
+    <button onclick="calculateSI()">Calculate</button>
+
+    <div class="result" id="output">Result: </div>
+</div>
+
+<script>
+
+let calculateSI = () => {
+    let p = Number(document.getElementById("p").value);
+    let t = Number(document.getElementById("t").value);
+    let r = Number(document.getElementById("r").value);
+
+    let si = (p * t * r) / 100;
+
+    document.getElementById("output").innerHTML = 
+        "Simple Interest: " + si;
+};
+
+</script>
+
+</body>
+</html>

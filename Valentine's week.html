@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Valentine's Week</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #751021, #f27dcb);
+            color: white;
+            text-align: center;
+        }
+
+        h1{
+            margin-top: 40px;
+            font-size: 36px;
+        }
+
+        .box{
+            width: 360px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.49);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        input{
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff4d6d;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #e63950;
+        }
+
+        #result{
+            margin-top: 20px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Valentine’s Week 💕</h1>
+
+    <div class="box">
+        <input type="number" id="day" placeholder="Enter day (7 to 14)">
+        <br>
+        <button onclick="showDay()">Show Day</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function showDay(){
+            let day = Number(document.getElementById("day").value);
+            let result = document.getElementById("result");
+
+            switch(day){
+                case 7:
+                    result.innerHTML = "Rose Day 🌹";
+                    break;
+                case 8:
+                    result.innerHTML = "Propose Day 💍";
+                    break;
+                case 9:
+                    result.innerHTML = "Chocolate Day 🍫";
+                    break;
+                case 10:
+                    result.innerHTML = "Teddy Day 🧸";
+                    break;
+                case 11:
+                    result.innerHTML = "Promise Day 🤝";
+                    break;
+                case 12:
+                    result.innerHTML = "Hug Day 🤗";
+                    break;
+                case 13:
+                    result.innerHTML = "Kiss Day 😘";
+                    break;
+                case 14:
+                    result.innerHTML = "Valentine’s Day ❤️";
+                    break;
+                default:
+                    result.innerHTML = "Invalid Day 💔";
+            }
+        }
+    </script>
+</body>
+</html>

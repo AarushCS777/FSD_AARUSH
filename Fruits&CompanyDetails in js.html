@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Fruits & Company Details</title>
+    <style>
+    h1{
+        text-align: center;
+        color: rgb(81, 9, 63);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    div{
+        border: 1px solid gray;
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .com1{
+        border: 1px solid gray;
+        width: 260px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .com2{
+        border: 1px solid gray;
+        width: 260px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .com3{
+        border: 1px solid gray;
+        width: 260px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .com4{
+        border: 1px solid gray;
+        width: 260px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .com5{
+        border: 1px solid gray;
+        width: 260px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: left;
+    }
+</style>
+
+
+</head>
+
+<body>
+<h1>Fruits & Company Details</h1>
+
+<script>
+    document.writeln("<h2>Fruits Details</h2>");
+    document.writeln("<div>");
+
+    // Arrays
+    let array = ["Banana","Apple","Orange","Mango","Grape","Pomegranate","Guava","Papaya","Kiwi","Pineapple"];
+    document.writeln("The Fruits are: " + array + "<br>");
+
+    document.writeln("</div><br><br>");
+
+    // Objects
+    document.writeln("<h2>Company Details</h2>");
+
+    let comp1 = {
+        1:"IBM",
+        2:"Charles Ranlett Flint",
+        3:"2,88,000",
+        4:"25 Lakh/annum",
+        5:"New York, USA"
+    };
+
+    let comp2 = {
+        1:"BlackRock",
+        2:"Laurence D. Fink",
+        3:"19,800",
+        4:"30 Lakh/annum",
+        5:"New York, USA"
+    };
+
+    let comp3 = {
+        1:"Amazon",
+        2:"Jeff Bezos",
+        3:"15,00,000",
+        4:"28 Lakh/annum",
+        5:"Seattle, USA"
+    };
+
+    let comp4 = {
+        1:"Tesla",
+        2:"Elon Musk",
+        3:"1,40,000",
+        4:"35 Lakh/annum",
+        5:"Texas, USA"
+    };
+
+    let comp5 = {
+        1:"Meta",
+        2:"Mark Zuckerberg",
+        3:"86,000",
+        4:"40 Lakh/annum",
+        5:"California, USA"
+    };
+
+    document.writeln("<form class='com1'>");
+    document.writeln("Company name is: " + comp1[1] + "<br>");
+    document.writeln("Founder is: " + comp1[2] + "<br>");
+    document.writeln("Avg Employees are: " + comp1[3] + "<br>");
+    document.writeln("Avg Salary is: " + comp1[4] + "<br>");
+    document.writeln("Location is: " + comp1[5] + "<br>");
+    document.writeln("</form><br>");
+
+    document.writeln("<form class='com2'>");
+    document.writeln("Company name is: " + comp2[1] + "<br>");
+    document.writeln("Founder is: " + comp2[2] + "<br>");
+    document.writeln("Avg Employees are: " + comp2[3] + "<br>");
+    document.writeln("Avg Salary is: " + comp2[4] + "<br>");
+    document.writeln("Location is: " + comp2[5] + "<br>");
+    document.writeln("</form><br>");
+
+    document.writeln("<form class='com3'>");
+    document.writeln("Company name is: " + comp3[1] + "<br>");
+    document.writeln("Founder is: " + comp3[2] + "<br>");
+    document.writeln("Avg Employees are: " + comp3[3] + "<br>");
+    document.writeln("Avg Salary is: " + comp3[4] + "<br>");
+    document.writeln("Location is: " + comp3[5] + "<br>");
+    document.writeln("</form><br>");
+
+    document.writeln("<form class='com4'>");
+    document.writeln("Company name is: " + comp4[1] + "<br>");
+    document.writeln("Founder is: " + comp4[2] + "<br>");
+    document.writeln("Avg Employees are: " + comp4[3] + "<br>");
+    document.writeln("Avg Salary is: " + comp4[4] + "<br>");
+    document.writeln("Location is: " + comp4[5] + "<br>");
+    document.writeln("</form><br>");
+
+    document.writeln("<form class='com5'>");
+    document.writeln("Company name is: " + comp5[1] + "<br>");
+    document.writeln("Founder is: " + comp5[2] + "<br>");
+    document.writeln("Avg Employees are: " + comp5[3] + "<br>");
+    document.writeln("Avg Salary is: " + comp5[4] + "<br>");
+    document.writeln("Location is: " + comp5[5] + "<br>");
+    document.writeln("</form>");
+</script>
+
+</body>
+</html>

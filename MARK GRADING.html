@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Students Marks Grading System</title>
+
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #67a6e5;
+            }
+
+            h1{
+                text-align: center;
+                color: #333;
+            }
+
+            .box{
+                width: 380px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            }
+
+            .box p{
+                margin: 6px 0;
+                font-weight: bold;
+            }
+
+            input{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 12px;
+                border-radius: 5px;
+                border: 1px solid #aaa;
+                font-size: 15px;
+            }
+
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #0056b3;
+            }
+
+            #result{
+                font-weight: bold;
+                background-color: #eef2f5;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Students Marks Grading System</h1>
+
+        <div class="box">
+            <p>Name : Aarush</p>
+            <p>Registration Number : 2411021240028</p>
+            <p>Course : BCA</p>
+
+            <hr>
+
+            <input type="number" id="marks" placeholder="Enter Marks">
+
+            <button onclick="grade()">Check Grade</button>
+
+            <br><br>
+
+            <input type="text" id="result" value="RESULT :" readonly>
+        </div>
+
+        <script>
+            function grade(){
+                let marks = Number(document.getElementById("marks").value);
+                let res;
+
+                if(marks >= 95){
+                    res = "RESULT : O";
+                }else{
+                
+                if(marks >= 90){
+                        res = "RESULT : A+";
+                }else{
+                if(marks >= 85){
+                            res = "RESULT : A";
+                }else{
+                if(marks >= 80){
+                                res = "RESULT : B+";
+                }else{
+                if(marks >= 75){
+                                    res = "RESULT : B";
+                }else{
+                if(marks >= 65){b
+                                        res = "RESULT : C";
+                }else{
+                 if(marks >= 50){
+                                            res = "RESULT : D";
+                }
+                else{
+                                            res = "RESULT : FAIL";
+                }
+                }
+                }
+                }
+                }
+                }
+                }
+
+                document.getElementById("result").value = res;
+            }
+        </script>
+
+    </body>
+</html>
